@@ -1,22 +1,25 @@
 package test_main;
 /*
- * [ Java 기본 데이터 type ]
+ * [ Java 기본 데이터 type]
  * 
- * 2. 논리형(boolean)
+ * 3. 문자형(char)
  * 
- *  - 가질수 있는 갑스이 범위 : true, false 두가지 값을 가질수 있다
- *   - 만드는 방법 : true, false 를 직접 써주거나 비교연산 혹은 논리연산의 결과로 얻어낼수 있다.
+ * -65536 가지의 코드값을 가질수 있어서 전세계에서 사용하는 문자 한글자를 표현 할 수 있다.
  */
-
 public class MainClass04 {
 	public static void main(String[] args) {
-		//논리형 변수 선언과 동시에 값 대입하기
-		boolean isRun=true;
+		//char 형 변수 선언과 동시에 값 대입하기
+		char ch1='a';
+		char ch2='1';
+		char ch3='@';
+		char ch4='가';
+		char ch5='쀍';
 		
-		if(isRun) {
-			System.out.println("달려요!");
-		}
-		
-		System.out.println("메인 메소드가 종료 됩니다.");
+		//내부적으로는 정수 code 값으로 처리한다.
+		int code1=ch1; // 자동 casting 되어서 담긴다.
+		int code2=ch2;
+		int code3=ch3;
+		int code4=ch4;
+		int code5=ch5;
 	}
 }
